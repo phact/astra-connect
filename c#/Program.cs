@@ -17,7 +17,7 @@ namespace astraconnect
                        .Connect();
 
             var rowSet = session.Execute("select * from system.local");
-            Console.WriteLine(rowSet.First().GetValue<string>("test"));
+            Console.WriteLine(rowSet.First().GetValue<string>("key"));
 
         }
     }
